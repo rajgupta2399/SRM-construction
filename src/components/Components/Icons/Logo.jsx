@@ -15,9 +15,6 @@ const Logo = () => {
           height={60} // Intrinsic height of the original image
         />
       </div>
-      {/* <span className="font-bold dark:font-semibold text-lg md:text-xl">
-        SRM Construction
-      </span> */}
     </Link>
   );
 };
