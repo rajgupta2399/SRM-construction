@@ -5,6 +5,8 @@ import ThemeProvide from "@/components/Components/Header/ThemeProvide";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import Header from "@/components/Components/Header/Header";
+import FooterApp from "@/components/Components/Footer/Foot";
 
 export const metadata = {
   title: "MakeMyTrip App",
@@ -35,7 +37,9 @@ export default function App({ Component, pageProps }) {
       <main className={`${montserrat.variable} font-mont w-full min-h-screen`}>
         <ThemeProvide>
           <ThemeSwitcher />
+          <Header />
           <Component {...pageProps} />
+          <FooterApp/>
         </ThemeProvide>
       </main>
     </>

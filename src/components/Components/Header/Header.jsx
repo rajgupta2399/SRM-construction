@@ -28,14 +28,14 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full p-4 px-5 sm:px-10 flex items-center justify-between mb-3 ${
+      className={`w-full p-4 px-5 sm:px-10 flex items-center justify-between ${
         theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
       } transition-all duration-300`}
     >
       <Logo />
 
       <button
-        className="inline-block sm:hidden z-50 mr-3"
+        className="inline-block sm:hidden z-50 mr-0"
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
@@ -153,7 +153,7 @@ const Header = () => {
         </button>
       </nav>
 
-      <div className="hidden sm:flex items-center mt-4">
+      <div className="hidden sm:flex items-center">
         <a
           href=""
           rel="noopener noreferrer"

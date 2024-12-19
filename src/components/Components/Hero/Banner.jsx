@@ -2,6 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import GradualSpacing from "@/components/ui/gradual-spacing";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
+
+const words = `
+Complete Waterproofing solutions for your Home.Let's waterproof your architectural marvels through Liquid Membranes.`;
 
 const HomeCoverSection = ({ blogs }) => {
   return (
@@ -44,10 +48,7 @@ const HomeCoverSection = ({ blogs }) => {
             </h1>
           </Link>
           <p className="hidden sm:inline-block mt-4 md:text-lg lg:text-xl font-in">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
-            dolorem nisi cupiditate id itaque ab iusto, animi minus, deleniti
-            eaque adipisci non laudantium soluta reprehenderit magni! Autem
-            facere perspiciatis
+            <TextGenerateEffect words={words} />
           </p>
         </div>
       </article>
