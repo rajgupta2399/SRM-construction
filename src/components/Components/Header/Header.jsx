@@ -95,6 +95,9 @@ const Header = () => {
           About
         </Link>
         <Link href="/contact" className="mx-2">
+          Work
+        </Link>
+        <Link href="/contact" className="mx-2">
           Contact
         </Link>
 
@@ -125,13 +128,19 @@ const Header = () => {
         <Link href="/about" className="mx-2">
           About
         </Link>
+
+        <Link href="/contact" className="mx-2">
+          Work
+        </Link>
+
         <Link href="/contact" className="mx-2">
           Contact
         </Link>
-
         <button
           className={`w-6 h-6 ease ml-2 flex items-center justify-center rounded-full p-1 ${
-            theme === "light" ? "bg-[#1b1b1b] text-white" : " text-black"
+            theme === "light"
+              ? "bg-[#1b1b1b] text-white"
+              : "text-black bg-[#1D232A]"
           }`}
           aria-label="theme-switcher"
           onClick={toggleTheme}

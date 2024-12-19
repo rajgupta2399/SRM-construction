@@ -1,12 +1,13 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: [
-      "assets.aceternity.com",
-      "images.unsplash.com",
-      "ui.aceternity.com",
-      "pngimagesfree.com"
-    ], // Add your image host domains here
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.(mp4|webm|ogg)$/,
+      type: "asset/resource",
+      generator: {
+        filename: "static/media/[name].[hash][ext]",
+      },
+    });
+    return config;
   },
 };
 
