@@ -91,13 +91,15 @@ const Header = () => {
         <Link href="/" className="mr-2">
           Home
         </Link>
-        <Link href="/about" className="mx-2">
+        <Link href="/About" className="mx-2">
           About
         </Link>
-        <Link href="/contact" className="mx-2">
-          Work
+
+        <Link href="/Services" className="mx-2">
+          Services
         </Link>
-        <Link href="/contact" className="mx-2">
+
+        <Link href="/Contact" className="mx-2">
           Contact
         </Link>
 
@@ -125,15 +127,15 @@ const Header = () => {
         <Link href="/" className="mr-2">
           Home
         </Link>
-        <Link href="/about" className="mx-2">
+        <Link href="/About" className="mx-2">
           About
         </Link>
 
-        <Link href="/contact" className="mx-2">
-          Work
+        <Link href="/Services" className="mx-2">
+          Services
         </Link>
 
-        <Link href="/contact" className="mx-2">
+        <Link href="/Contact" className="mx-2">
           Contact
         </Link>
         <button
