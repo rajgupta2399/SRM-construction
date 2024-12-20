@@ -35,7 +35,7 @@ const Header = () => {
       <Logo />
 
       <button
-        className="inline-block sm:hidden z-50 mr-0"
+        className="inline-block sm:hidden z-50 mr-4"
         onClick={toggle}
         aria-label="Hamburger Menu"
       >
@@ -85,7 +85,7 @@ const Header = () => {
             : "bg-light text-white border-white"
         }`}
         style={{
-          top: click ? "1rem" : "-5rem",
+          top: click ? "4.2rem" : "-5rem",
         }}
       >
         <Link href="/" className="mr-2">

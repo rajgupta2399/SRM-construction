@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import Header from "@/components/Components/Header/Header";
 import FooterApp from "@/components/Components/Footer/Foot";
+import { BackgroundBeamsWithCollisionDemo } from "@/components/Components/Footer/Footer";
 
 export const metadata = {
   title: "MakeMyTrip App",
@@ -39,7 +40,7 @@ export default function App({ Component, pageProps }) {
           <ThemeSwitcher />
           <Header />
           <Component {...pageProps} />
-          <FooterApp/>
+          <BackgroundBeamsWithCollisionDemo/>
         </ThemeProvide>
       </main>
     </>
