@@ -15,6 +15,7 @@ import { useTheme } from "next-themes";
 const Header = () => {
   const [click, setClick] = useState(false);
   const { theme, setTheme } = useTheme();
+  const [dropdownOpen, setDropdownOpen] = useState(false); // For dropdown
 
   const toggle = () => {
     setClick(!click);
@@ -95,9 +96,49 @@ const Header = () => {
           About
         </Link>
 
-        <Link href="/Services" className="mx-2">
-          Services
-        </Link>
+        <div
+          className="relative mx-2"
+          onMouseEnter={() => setDropdownOpen(true)}
+          onMouseLeave={() => setDropdownOpen(false)}
+        >
+          <Link href="/Services" className="">
+            Services
+          </Link>
+          {dropdownOpen && (
+            <div
+              className={`absolute top-7 left-[-100px] mt-2 w-[240px] border rounded-2xl backdrop-blur-4 ${
+                theme === "light"
+                  ? "bg-[#fffafb] border-black"
+                  : " text-black bg-[#fffafb]"
+              }`}
+            >
+              <Link href="/services/waterproofing" className="block px-4 py-2 ">
+                Water Proofing
+              </Link>
+              <Link href="/services/rc-punch" className="block px-4 py-2 ">
+                Terrace Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Swimmin Pool Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Tin Shed Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Toilet & Kitchen Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                PU Coating
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Shortcreeting
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                APP Membrane
+              </Link>
+            </div>
+          )}
+        </div>
 
         <Link href="/Contact" className="mx-2">
           Contact
@@ -131,9 +172,49 @@ const Header = () => {
           About
         </Link>
 
-        <Link href="/Services" className="mx-2">
-          Services
-        </Link>
+        <div
+          className="relative mx-2"
+          onMouseEnter={() => setDropdownOpen(true)}
+          onMouseLeave={() => setDropdownOpen(false)}
+        >
+          <Link href="/Services" className="">
+            Services
+          </Link>
+          {dropdownOpen && (
+            <div
+              className={`absolute top-7 left-[-100px] mt-2 w-[240px] border rounded-2xl backdrop-blur-4 ${
+                theme === "light"
+                  ? "bg-[#fffafb] border-black"
+                  : " text-black bg-[#fffafb]"
+              }`}
+            >
+              <Link href="/services/waterproofing" className="block px-4 py-2 ">
+                Water Proofing
+              </Link>
+              <Link href="/services/rc-punch" className="block px-4 py-2 ">
+                Terrace Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Swimmin Pool Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Tin Shed Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Toilet & Kitchen Waterproofing
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                PU Coating
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                Shortcreeting
+              </Link>
+              <Link href="/services/waterpool" className="block px-4 py-2 ">
+                APP Membrane
+              </Link>
+            </div>
+          )}
+        </div>
 
         <Link href="/Contact" className="mx-2">
           Contact
