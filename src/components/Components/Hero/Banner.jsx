@@ -47,7 +47,7 @@ const HomeCoverSection = ({ blogs }) => {
               {/* </span> */}
             </h1>
           </Link>
-          <p className="hidden sm:inline-block mt-4 sm:text md:text-lg lg:text-xl font-in">
+          <p className="sm:inline-block mt-4 sm:text-xm md:text-lg lg:text-xl">
             <TextGenerateEffect words={words} />
           </p>
         </div>

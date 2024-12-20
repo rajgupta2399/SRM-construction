@@ -85,7 +85,7 @@ const Header = () => {
             : "bg-light text-white border-white"
         }`}
         style={{
-          top: click ? "4.2rem" : "-5rem",
+          top: click ? "5.10rem" : "-5rem",
         }}
       >
         <Link href="/" className="mr-2">

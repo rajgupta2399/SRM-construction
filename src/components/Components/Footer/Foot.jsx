@@ -125,18 +125,18 @@ export default function FooterApp() {
             </ul>
           </div>
           <div>
-            <h6 className="uppercase font-semibold mb-4">Contact</h6>
+            <h6 className="uppercase font-semibold mb-4 text-center">Contact</h6>
             <ul className="space-y-2">
-              <li className="flex items-center">
+              <li className="">
                 <i className="fas fa-home mr-3" /> New York, NY 10012, US
               </li>
-              <li className="flex items-center">
+              <li className="">
                 <i className="fas fa-envelope mr-3" /> info@example.com
               </li>
-              <li className="flex items-center">
+              <li className="">
                 <i className="fas fa-phone mr-3" /> +01 234 567 88
               </li>
-              <li className="flex items-center">
+              <li className="">
                 <i className="fas fa-print mr-3" /> +01 234 567 89
               </li>
             </ul>

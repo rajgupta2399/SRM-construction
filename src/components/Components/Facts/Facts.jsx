@@ -22,10 +22,10 @@ export function RetroGridDemo() {
           key={index}
           className="relative z-10 flex flex-col items-center justify-center text-center"
         >
-          <span className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#ffd319] via-[#ff2975] to-[#8c1eff]">
+          <span className="sm:text-5xl text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r">
             <NumberTicker value={stat.value} />
           </span>
-          <span className="mt-2 text-sm font-medium uppercase text-gray-400">
+          <span className="mt-2 text-sm font-medium uppercase text-white">
             {stat.label}
           </span>
         </div>

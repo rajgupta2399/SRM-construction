@@ -178,10 +178,47 @@ const Query = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
-              <AccordionTrigger>Is it animated?</AccordionTrigger>
+              <AccordionTrigger>
+                {" "}
+                What do you mean by waterproofing?
+              </AccordionTrigger>
               <AccordionContent>
-                Yes. It's animated by default, but you can disable it if you
-                prefer.
+                Waterproofing refers to the process of making a structure or
+                object water-resistant or impervious to water, ensuring that
+                water does not penetrate or absorb into it under specified
+                conditions. This can involve applying coatings, membranes, or
+                other barrier systems to protect materials and structures from
+                water damage, including mold, corrosion, and structural
+                weakening due to water exposure.
+                <br /> <br />
+                The need for waterproofing is critical in many areas of
+                construction and manufacturing, including: <br /> <br />
+                <ul className=" px-4">
+                  <li>
+                    1) <b>Buildings and Construction</b>: To protect basements,
+                    roofs, walls, and other parts of buildings from water
+                    infiltration due to rain, groundwater, and moisture.
+                  </li>
+                  <li>
+                    2) <b>Infrastructure</b>: In bridges, tunnels, and dams,
+                    waterproofing is essential to maintain structural integrity
+                    and prevent damage.
+                  </li>
+                  <li>
+                    3) <b> Consumer Products</b>: Waterproofing is also used in
+                    the manufacture of clothing, electronics, and various
+                    consumer goods to protect against water damage.
+                  </li>
+                </ul>
+                <br />
+                Effective waterproofing involves not only preventing the passage
+                of water but also managing water vapor and ensuring durability
+                under the specific environmental conditions to which the
+                structure or item is exposed. The selection of a waterproofing
+                method and materials depends on several factors, including the
+                nature of the substrate, the environmental conditions, the
+                expected load of water, and the specific requirements for the
+                space or item being waterproofed.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

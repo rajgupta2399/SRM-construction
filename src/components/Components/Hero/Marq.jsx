@@ -1,49 +1,50 @@
 import { cn } from "@/lib/utils";
 import Marquee from "@/components/ui/marquee";
 
-const reviews = [
+const firstRowImages = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    img: "https://www.drfixit.co.in/web/images/web-logo.png",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    img: "https://ab-ham.com/wp-content/uploads/2022/05/LOGO-768x541.png",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    img: "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/asian-paints_logo-freelogovectors.net_.png",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
+    img: "https://ardaindia.in/wp-content/uploads/2022/03/ARDA-India-Logo-1.png",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Pidilite_logo.svg/1200px-Pidilite_logo.svg.png",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    img: "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/asian-paints_logo-freelogovectors.net_.png",
   },
+  
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+const secondRowImages = [
+  {
+    img: "https://seeklogo.com/images/D/DLF-logo-7E2CBA06DC-seeklogo.com.png",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Shapoorji_Pallonji_Group_logo.svg/1200px-Shapoorji_Pallonji_Group_logo.svg.png",
+  },
+  {
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Orient_Electric_logo.svg/1200px-Orient_Electric_logo.svg.png",
+  },
+  {
+    img : "https://www.niet.co.in/images/new-logo.png"
+  },
+  { 
+    img : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Thermal_Power_logo.svg/1200px-National_Thermal_Power_logo.svg.png"
+  },
+  {
+    img : "https://download.logo.wine/logo/Monsanto/Monsanto-Logo.wine.png"
+  }
+];
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ img }) => {
   return (
     <figure
       className={cn(
@@ -54,31 +55,31 @@ const ReviewCard = ({ img, name, username, body }) => {
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
-        </div>
+      <div className="relative w-full h-auto overflow-hidden dark:border-gray-50/[.1] p-2">
+        <img
+          className="w-full h-full object-contain"
+          alt="Partner Logo"
+          src={img}
+        />
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
     </figure>
   );
 };
 
 export function MarqueeDemo() {
   return (
-    <div className="relative flex h-[380px] w-full flex-col items-center justify-center overflow-hidden rounded-2xl bg-background md:shadow-xl">
+    <div className="relative flex h-[420px] w-full flex-col my-16 items-center justify-center overflow-hidden rounded-2xl bg-background md:shadow-sm py-0">
+      <h1 className="font-semibold sm:text-4xl text-2xl mb-4">Our Partners & Clients</h1>
+      {/* First Marquee */}
       <Marquee pauseOnHover className="[--duration:20s]">
-        {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+        {firstRowImages.map((review, index) => (
+          <ReviewCard key={index} img={review.img} />
         ))}
       </Marquee>
+      {/* Second Marquee */}
       <Marquee reverse pauseOnHover className="[--duration:20s]">
-        {secondRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+        {secondRowImages.map((review, index) => (
+          <ReviewCard key={index} img={review.img} />
         ))}
       </Marquee>
       <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-white dark:from-background"></div>
