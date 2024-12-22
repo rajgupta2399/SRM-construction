@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import GradualSpacing from "@/components/ui/gradual-spacing";
+import banner from "../../../../public/assets/banner.jpg"
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 const words = `
@@ -17,7 +18,7 @@ const HomeCoverSection = ({ blogs }) => {
             "
         />
         <Image
-          src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={banner}
           // placeholder="blur"
           //   blurDataURL={blog.image.blurDataURL}
           alt="title"
@@ -34,12 +35,12 @@ const HomeCoverSection = ({ blogs }) => {
           {/* <Tag link={`/categories/${slug(blog.tags[0])}`} name={blog.tags[0]} /> */}
           <Link href="" className="mt-6">
             <h1 className="font-bold capitalize text-xl sm:text-xl md:text-3xl lg:text-4xl">
-              <GradualSpacing
+              {/* <GradualSpacing
                 className="bg-gradient-to-r from-accent to-accent dark:from-accentDark/50 
                 dark:to-accentDark/50 bg-[length:0px_6px]
                 hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 font-bold -tracking-widest "
                 text="SRM Construction"
-              />
+              /> */}
               {/* <GradualSpacing
                   className="font-display text-center text-4xl font-bold -tracking-widest  text-black dark:text-white md:text-7xl md:leading-[5rem]"
                   text="SRM Construction"
@@ -47,9 +48,9 @@ const HomeCoverSection = ({ blogs }) => {
               {/* </span> */}
             </h1>
           </Link>
-          <p className="sm:inline-block mt-4 sm:text-xm md:text-lg lg:text-xl">
+          {/* <p className="sm:inline-block mt-4 sm:text-xm md:text-lg lg:text-xl">
             <TextGenerateEffect words={words} />
-          </p>
+          </p> */}
         </div>
       </article>
     </div>
