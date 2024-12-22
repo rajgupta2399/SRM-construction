@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
-import founder from "../../../../public/assets/founder.jpg";
+import founder from "../../../../public/assets/founder.png";
 
 export function Founder() {
   return (

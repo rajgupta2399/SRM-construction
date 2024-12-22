@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
-import owner from "../../../../public/assets/owner.jpg";
+import owner from "../../../../public/assets/owner.png";
 
 const Owner = () => {
   return (
