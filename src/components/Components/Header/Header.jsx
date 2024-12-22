@@ -243,7 +243,7 @@ const Header = () => {
         </button>
       </nav>
 
-      <div className="flex space-x-4">
+      <div className="sm:flex space-x-4 hidden">
         {[
           {
             href: "https://www.facebook.com/profile.php?id=100064188390347",

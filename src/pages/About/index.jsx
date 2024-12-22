@@ -1,9 +1,16 @@
-import React from 'react'
+import AboutBanner from "@/components/Components/Hero/AboutBanner";
+import React from "react";
+import AboutTextPage from "./_components/AboutText/AboutTextPage";
+import VisionAndMission from "./_components/AboutText/VisionAndMission";
 
 const About = () => {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <AboutBanner />
+      <AboutTextPage />
+      <VisionAndMission/>
+    </div>
+  );
+};
 
-export default About
+export default About;
