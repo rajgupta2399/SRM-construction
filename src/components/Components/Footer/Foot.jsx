@@ -1,6 +1,13 @@
 import React from "react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function FooterApp() {
   const { theme } = useTheme();
@@ -18,12 +25,15 @@ export default function FooterApp() {
         </div>
         <div className="flex space-x-4">
           {[
-            { href: "https://facebook.com", icon: "facebook" },
-            { href: "https://twitter.com", icon: "twitter" },
-            { href: "https://google.com", icon: "google" },
-            { href: "https://instagram.com", icon: "instagram" },
-            { href: "https://linkedin.com", icon: "linkedin" },
-            { href: "https://github.com", icon: "github" },
+            {
+              href: "https://www.facebook.com/profile.php?id=100064188390347",
+              icon: faFacebook,
+            },
+            {
+              href: "https://www.youtube.com/@srmconstruction7539",
+              icon: faYoutube,
+            },
+            { href: "https://instagram.com", icon: faInstagram },
           ].map((social, index) => (
             <motion.a
               key={index}
@@ -34,7 +44,7 @@ export default function FooterApp() {
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.9 }}
             >
-              <i className={`fab fa-${social.icon}`} />
+              <FontAwesomeIcon icon={social.icon} />
             </motion.a>
           ))}
         </div>
@@ -44,21 +54,23 @@ export default function FooterApp() {
       <div className="container mx-auto px-6 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div>
-            <h6 className="uppercase font-semibold mb-4">Company Name</h6>
+            <h6 className="uppercase font-semibold mb-4">SRM Construction</h6>
             <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              SRM Construction is one of the best waterproofing in Delhi NCR. we
+              deal in all kinds of waterproofing Like Chemical waterproofing,
+              Guniting, Kota, etc. We are one of the best waterproofing
+              contractors in the market with 25 years
             </p>
           </div>
           <div>
-            <h6 className="uppercase font-semibold mb-4">Products</h6>
+            <h6 className="uppercase font-semibold mb-4">Services</h6>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#!"
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  Angular
+                  Waterproofing
                 </a>
               </li>
               <li>
@@ -66,7 +78,7 @@ export default function FooterApp() {
                   href="#!"
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  React
+                  PU Injuction Grouting
                 </a>
               </li>
               <li>
@@ -74,7 +86,7 @@ export default function FooterApp() {
                   href="#!"
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  Vue
+                  RCC Structure Repairs
                 </a>
               </li>
               <li>
@@ -82,7 +94,7 @@ export default function FooterApp() {
                   href="#!"
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  Laravel
+                  Injuction Grouting
                 </a>
               </li>
             </ul>
@@ -91,53 +103,61 @@ export default function FooterApp() {
             <h6 className="uppercase font-semibold mb-4">Useful Links</h6>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#!"
+                <Link
+                  href={"/About"}
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  Pricing
-                </a>
+                  About
+                </Link>
               </li>
               <li>
-                <a
-                  href="#!"
+                <Link
+                  href={"/Service"}
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  Settings
-                </a>
+                  Service
+                </Link>
               </li>
               <li>
-                <a
-                  href="#!"
+                <Link
+                  href={"/Service"}
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  Orders
-                </a>
+                  Work
+                </Link>
               </li>
               <li>
-                <a
-                  href="#!"
+                <Link
+                  href={"/Contact"}
                   className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
                 >
-                  Help
-                </a>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h6 className="uppercase font-semibold mb-4 text-center">Contact</h6>
+            <h6 className="uppercase font-semibold mb-4 text-center">
+              Contact
+            </h6>
             <ul className="space-y-2">
               <li className="">
-                <i className="fas fa-home mr-3" /> New York, NY 10012, US
+                <i className="fas fa-home mr-3" /> Mukundpur, Delhi, India
+                110042
               </li>
               <li className="">
-                <i className="fas fa-envelope mr-3" /> info@example.com
+                <i className="fas fa-envelope mr-3" />{" "}
+                <a href="mail:srmconstruction1998@gmail.com?body=">
+                  srmconstruction1998@gmail.com
+                </a>
               </li>
               <li className="">
-                <i className="fas fa-phone mr-3" /> +01 234 567 88
+                <i className="fas fa-phone mr-3" />{" "}
+                <a href="tel:+91 9034499719"> +91 9034499719</a>
               </li>
               <li className="">
-                <i className="fas fa-print mr-3" /> +01 234 567 89
+                <i className="fas fa-print mr-3" />{" "}
+                <a href="tel:+91 9810449437"> +91 9810449437 </a>
               </li>
             </ul>
           </div>
@@ -153,7 +173,7 @@ export default function FooterApp() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Rajkumar
+          Rajkumar & Ashutosh
         </a>
       </div>
     </footer>

@@ -9,6 +9,13 @@ import {
   MoonIcon,
   SunIcon,
 } from "../Icons/Icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 
@@ -236,7 +243,33 @@ const Header = () => {
         </button>
       </nav>
 
-      <div className="hidden sm:flex items-center">
+      <div className="flex space-x-4">
+        {[
+          {
+            href: "https://www.facebook.com/profile.php?id=100064188390347",
+            icon: faFacebook,
+          },
+          {
+            href: "https://www.youtube.com/@srmconstruction7539",
+            icon: faYoutube,
+          },
+          { href: "https://instagram.com", icon: faInstagram },
+        ].map((social, index) => (
+          <motion.a
+            key={index}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300"
+            whileHover={{ y: -3 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <FontAwesomeIcon icon={social.icon} />
+          </motion.a>
+        ))}
+      </div>
+
+      {/* <div className="hidden sm:flex items-center">
         <a
           href=""
           rel="noopener noreferrer"
@@ -273,7 +306,7 @@ const Header = () => {
         >
           <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
-      </div>
+      </div> */}
     </header>
   );
 };

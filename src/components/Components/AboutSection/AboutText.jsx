@@ -8,17 +8,10 @@ const AboutText = () => {
   return (
     <div className="size-full max-w-lg items-center justify-center overflow-hidden pt-8">
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-        <p className="sm:text-[2.5rem] text-[1.9rem] font-semibold">
+        <p className="sm:text-[2.3rem] text-[1.9rem] font-semibold">
           Welcome to SRM Construction
           {/* <span className="text-[#5046e6]">.</span> */}
         </p>
-      </BoxReveal>
-
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-        <h2 className="mt-[.5rem] text-[1rem]">
-          Number One{" "}
-          <span className="text-[#5046e6]">Waterproofing Company</span>
-        </h2>
       </BoxReveal>
 
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
@@ -27,11 +20,50 @@ const AboutText = () => {
             SRM Construction is one of the best waterproofing in Delhi NCR. we
             deal in all kinds of waterproofing Like Chemical waterproofing,
             Guniting, Kota, etc. We are one of the best waterproofing
-            contractors in the market with 25 years in the field. We are a team
-            of qualified Civil Engineers, Supervisors and applicators working in
-            this field for more than thirty years satisfactorily.
+            contractors in the market with 25 years in the field.
           </p>
         </div>
+      </BoxReveal>
+
+      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+        <h2 className="mt-[.5rem] text-[1rem]">
+          SRM Construction have many{" "}
+          <span className="text-[#5046e6]"> Specialization are :</span>
+        </h2>
+      </BoxReveal>
+      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+        <ul className="list-disc list-inside mt-2 text-[1rem]">
+          <li>
+            <strong>
+              <span className="text-[#0094DE]">Site Planning :</span>
+            </strong>{" "}
+            Prepare plan after the site visit.
+          </li>
+          <li>
+            <strong>
+              <span className="text-[#0094DE]">Best Workers :</span>
+            </strong>{" "}
+            We have the best experienced workers in our field.
+          </li>
+          <li>
+            <strong>
+              <span className="text-[#0094DE]">Civil Engineers :</span>
+            </strong>{" "}
+            They work professionally in their field.
+          </li>
+          <li>
+            <strong>
+              <span className="text-[#0094DE]">10-Year Warranty :</span>
+            </strong>{" "}
+            We provide a 10-year warranty to our happy customers.
+          </li>
+          <li>
+            <strong>
+              <span className="text-[#0094DE]">Free Site Visit :</span>
+            </strong>{" "}
+            We offer free site visits to our happy customers.
+          </li>
+        </ul>
       </BoxReveal>
 
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>

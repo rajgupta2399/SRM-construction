@@ -22,8 +22,8 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <Image
-          src="https://media.istockphoto.com/id/1318893320/photo/cover-the-concrete-wall-with-a-cement-polymer-waterproofing-membrane-waterproofing-with-a.webp?a=1&b=1&s=612x612&w=0&k=20&c=MmLfhiEtcJErWEef2PAmABhNWbrI7-4_DHx7aR-tx7I="
-          width={500}
+          src="/Image/water.jpg"
+          width={600}
           height={500}
           unoptimized
           alt="linear demo image"
@@ -54,7 +54,7 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <Image
-          src="https://plus.unsplash.com/premium_photo-1683129630753-a67cb44a9dab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dEVSUkFDRSUyMFdBVEVSUFJPT0ZJTkd8ZW58MHx8MHx8fDA%3D"
+          src="/Image/rcc.webp"
           width={700}
           height={500}
           unoptimized
@@ -80,12 +80,12 @@ export function WobbleCardDemo() {
           </p>
         </div>
         <Image
-          src="https://media.istockphoto.com/id/1318893320/photo/cover-the-concrete-wall-with-a-cement-polymer-waterproofing-membrane-waterproofing-with-a.webp?a=1&b=1&s=612x612&w=0&k=20&c=MmLfhiEtcJErWEef2PAmABhNWbrI7-4_DHx7aR-tx7I="
-          width={600}
-          height={500}
+          src="/Image/liquid-membrane.jpeg"
+          width={700}
+          height={600}
           unoptimized
           alt="linear demo image"
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
+          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-   rounded-2xl"
         />
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">

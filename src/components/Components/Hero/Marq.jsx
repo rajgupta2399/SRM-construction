@@ -3,44 +3,84 @@ import Marquee from "@/components/ui/marquee";
 
 const firstRowImages = [
   {
-    img: "https://www.drfixit.co.in/web/images/web-logo.png",
+    img: "/Image/web-logo.png",
   },
   {
-    img: "https://ab-ham.com/wp-content/uploads/2022/05/LOGO-768x541.png",
+    img: "/Image/fosroc.png",
   },
   {
-    img: "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/asian-paints_logo-freelogovectors.net_.png",
+    img: "/Image/asian-paints.png",
   },
   {
-    img: "https://ardaindia.in/wp-content/uploads/2022/03/ARDA-India-Logo-1.png",
+    img: "/Image/arda.png",
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Pidilite_logo.svg/1200px-Pidilite_logo.svg.png",
+    img: "/Image/Pidilite.png",
   },
   {
-    img: "https://cdn.freelogovectors.net/wp-content/uploads/2023/05/asian-paints_logo-freelogovectors.net_.png",
+    img: "/Image/arihant.png",
   },
-  
+  {
+    img: "/Image/ats-allure-logo.png",
+  },
+  {
+    img: "/Image/camellias.png",
+  },
+  {
+    img: "/Image/gls-logo-1-1.png",
+  },
+  {
+    img: "/Image/Paramount.png",
+  },
+  {
+    img: "/Image/NCC.png",
+  },
+  {
+    img: "/Image/signature-global-logo.png",
+  },
 ];
 
 const secondRowImages = [
   {
-    img: "https://seeklogo.com/images/D/DLF-logo-7E2CBA06DC-seeklogo.com.png",
+    img: "/Image/DLF.png",
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/55/Shapoorji_Pallonji_Group_logo.svg/1200px-Shapoorji_Pallonji_Group_logo.svg.png",
+    img: "/Image/NCC.png",
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Orient_Electric_logo.svg/1200px-Orient_Electric_logo.svg.png",
+    img: "/Image/Shapoorji_Pallonji.png",
   },
   {
-    img : "https://www.niet.co.in/images/new-logo.png"
+    img: "/Image/Orient_Electric.png",
   },
+  {
+    img : "/Image/niet.png"
+  },
+  
   { 
-    img : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/National_Thermal_Power_logo.svg/1200px-National_Thermal_Power_logo.svg.png"
+    img : "/Image/National_Thermal_Power.png"
   },
   {
-    img : "https://download.logo.wine/logo/Monsanto/Monsanto-Logo.wine.png"
+    img : "/Image/Monsanto-Logo.png"
+  },
+
+  {
+    img: "/Image/arihant.png",
+  },
+  {
+    img: "/Image/ats-allure-logo.png",
+  },
+  {
+    img: "/Image/camellias.png",
+  },
+  {
+    img: "/Image/gls-logo-1-1.png",
+  },
+  {
+    img: "/Image/Paramount.png",
+  },
+  {
+    img: "/Image/signature-global-logo.png",
   }
 ];
 

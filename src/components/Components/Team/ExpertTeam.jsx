@@ -10,7 +10,7 @@ const ExpertTeam = () => {
         <div className="heading">
           <h1 className="font-semibold text-4xl">Meet Our Founders</h1>
         </div>
-        <div className="flex gap-8 sm:flex-row md:flex-col flex-col lg:flex-row">
+        <div className="flex gap-8 sm:flex-row md:flex-col flex-col lg:flex-row sm:mt-[-30px] mt-[20px]">
           <div className="owner">
             <Owner />
           </div>
