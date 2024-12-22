@@ -6,6 +6,7 @@ import { ScrollBasedVelocityDemo } from "@/components/Components/Scroll/ScrollBa
 import OurService from "@/components/Components/HomeServices/OurService";
 import { RetroGridDemo } from "@/components/Components/Facts/Facts";
 import Query from "@/components/Components/Facts/Query";
+import ExpertTeam from "@/components/Components/Team/ExpertTeam";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,6 +25,7 @@ export default function Home() {
       <ScrollBasedVelocityDemo/>
       <AboutSection/>
       <OurService/>
+      <ExpertTeam/>
       <RetroGridDemo/>
       <Query/>
       <MarqueeDemo />
