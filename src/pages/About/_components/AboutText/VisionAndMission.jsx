@@ -13,9 +13,7 @@ const VisionAndMission = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto w-full sm:px-12 px-6 sm:py-5 py-3 mb-5">
-          <WobbleCard
-            containerClassName="col-span-1 h-full bg-pink-800 min-h-[400px] flex flex-col justify-center"
-          >
+          <WobbleCard containerClassName="col-span-1 h-full bg-pink-800 min-h-[400px] flex flex-col justify-center">
             <div className="px-6">
               <h2 className="text-left text-balance text-2xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                 Our Vision
@@ -33,20 +31,21 @@ const VisionAndMission = () => {
             </div>
           </WobbleCard>
 
-          <WobbleCard
-            containerClassName="col-span-1 h-full bg-blue-800 min-h-[400px] flex flex-col justify-center"
-          >
+          <WobbleCard containerClassName="col-span-1 h-full bg-blue-800 min-h-[400px] flex flex-col justify-center">
             <div className="px-6">
               <h2 className="text-left text-balance text-2xl md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                 Our Mission
               </h2>
               <p className="mt-4 text-left text-base/6 text-neutral-200">
-                At SRM, our mission is to redefine structural integrity by setting
-                the gold standard in waterproofing solutions across India. Through
-                relentless innovation, expert craftsmanship, and a client-centric
-                approach, we strive to be the trusted waterproofing partner for
-                architects, developers, and property owners. Ensuring a better
-                future by providing high-value waterproofing solutions.
+                To be the leading waterproofing solution provider wherever we
+                go, providing finest service exceeding customers’ expectations
+                and be recognised as the preferred restoration partner in the
+                market. <br />
+                Our motto is to give the best service to our customer’s pre or
+                post application. May be its an appreciation of doing a very
+                good job or any challenge that has cropped in while the project
+                is on a working stage, SRM CONSTRUCTION Team will be there to
+                find the solution for you.
               </p>
             </div>
           </WobbleCard>

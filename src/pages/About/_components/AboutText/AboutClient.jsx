@@ -25,7 +25,7 @@ const ListOfImages = [
 
 const AboutClient = () => {
   return (
-    <div className=" pb-10">
+    <div className="pb-10 sm:pt-0 pt-6">
       <div>
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold max-w-7xl mx-auto text-center relative z-20 py-0 pb-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
           Our Partners & Clients
