@@ -119,28 +119,28 @@ const Header = () => {
                   : " text-black bg-[#fffafb]"
               }`}
             >
-              <Link href="/services/waterproofing" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Water Proofing
               </Link>
-              <Link href="/services/rc-punch" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Terrace Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Swimmin Pool Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Tin Shed Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Toilet & Kitchen Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 PU Coating
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Shortcreeting
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 APP Membrane
               </Link>
             </div>
@@ -195,28 +195,28 @@ const Header = () => {
                   : " text-black bg-[#fffafb]"
               }`}
             >
-              <Link href="/services/waterproofing" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Water Proofing
               </Link>
-              <Link href="/services/rc-punch" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Terrace Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Swimmin Pool Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Tin Shed Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Toilet & Kitchen Waterproofing
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 PU Coating
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 Shortcreeting
               </Link>
-              <Link href="/services/waterpool" className="block px-4 py-2 ">
+              <Link href="/Services" className="block px-4 py-2 ">
                 APP Membrane
               </Link>
             </div>

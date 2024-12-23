@@ -11,7 +11,9 @@ const OurService = () => {
           <Cover>SRM Construction</Cover>
         </h1>
       </div>
-      <WobbleCardDemo/>
+      <div className="mb-12">
+        <WobbleCardDemo />
+      </div>
     </div>
   );
 };

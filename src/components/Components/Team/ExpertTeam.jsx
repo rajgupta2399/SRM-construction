@@ -6,9 +6,9 @@ import { Marketing } from "./Marketing";
 const ExpertTeam = () => {
   return (
     <>
-      <div className=" px-12 mt-14">
+      <div className="px-12 mt-3">
         <div className="heading">
-          <h1 className="font-semibold text-4xl">Meet Our Founders</h1>
+          <h1 className="font-semibold sm:text-4xl text-2xl text-center sm:text-left">Meet Our Founders</h1>
         </div>
         <div className="flex gap-8 sm:flex-row md:flex-col flex-col lg:flex-row sm:mt-[-30px] mt-[20px]">
           <div className="owner">

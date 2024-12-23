@@ -10,25 +10,30 @@ const AbText = () => {
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
         <div className="mt-0 w-full">
           <p className=" sm:text-[22px] my-2 w-full">
-            Through 23 years of professional experience, our specialized team
-            has successfully provided waterproofing solutions for homes,
-            industrial sites, office & commercial spaces all over India. Since
-            1998 . SRM CONSTRUCTION Waterproofing has established its reputation
-            in the market as a reliable and cost- effective waterproofing
-            coating from the roof, to the walls and to wet areas. Our hands-on
-            approach and an established record of satisfied customers have
-            contributed greatly to the rapid growth of our company over the
-            years. Through added new technologies & product base we have set
-            benchmark for our competitors in waterproofing solutions for
-            residential and commercial properties. We aim to help you determine
-            the source of water leakage, providing high quality, environmental
-            friendly and cost effective waterproofing solutions for both
-            interior and exterior. We also provide waterproofing consultancy
-            including diagnosis and problem solving for all type of water
-            leakage issues and projects. This will often include site visits and
-            recommendations for specialty applications. We are into this
-            business for part 23 years and associated with most of the reputed
-            builders in the Delhi/NCR.
+            Welcome to SRM Waterproofing Contractor, your trusted partner for
+            comprehensive waterproofing solutions since 1984. As a
+            third-generation family business, we pride ourselves on our
+            deep-rooted expertise and commitment to excellence in the field of
+            waterproofing. Our team consists of highly skilled specialists and
+            dedicated workers who ensure the highest quality of service. Our
+            professionally managed site inspection and consultancy services are
+            designed to provide tailored, value-added solutions that meet our
+            clients' specific needs. Whether it's for residential, commercial,
+            or industrial properties, we offer a wide range of services to
+            protect your structures from water damage. Our services include
+            terrace waterproofing, swimming pool waterproofing, tin shed
+            waterproofing, PU coating, and toilet and kitchen
+            waterproofing, among others.
+          </p>
+          <p className=" sm:text-[22px] my-2 w-full">
+            At SRM Waterproofing Contractor, we believe in delivering
+            lasting results through meticulous workmanship and innovative
+            techniques. Our goal is to ensure that every project we undertake is
+            executed with precision and attention to detail, providing our
+            clients with peace of mind and long-term protection. Contact us
+            today to learn more about how we can assist you with your
+            waterproofing needs. Experience the reliability and expertise that
+            have made us a leader in the industry for over three decades.
           </p>
         </div>
       </BoxReveal>
