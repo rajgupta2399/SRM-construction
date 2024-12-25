@@ -7,6 +7,7 @@ import OurService from "@/components/Components/HomeServices/OurService";
 import { RetroGridDemo } from "@/components/Components/Facts/Facts";
 import Query from "@/components/Components/Facts/Query";
 import ExpertTeam from "@/components/Components/Team/ExpertTeam";
+import Testimonial from "@/components/Components/Testimonials/Testtimonials";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function Home() {
       <RetroGridDemo/>
       <Query/>
       <MarqueeDemo />
+      <Testimonial/>
     </>
   );
 }
