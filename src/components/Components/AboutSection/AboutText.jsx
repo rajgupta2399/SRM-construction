@@ -31,37 +31,42 @@ const AboutText = () => {
           <span className="text-[#5046e6]"> Specialization are :</span>
         </h2>
       </BoxReveal>
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+      <BoxReveal boxColor={"#5046e6"} duration={1}>
         <ul className="list-disc list-inside mt-2 text-[1rem]">
-          <li>
+          <li className="flex items-start gap-2 group mb-3 cursor-pointer">
+            <i className="fa-solid fa-sitemap text-2xl text-gray-500 group-hover:text-[#5046e6] transition-colors duration-300 "></i>
             <strong>
               <span className="text-[#0094DE]">Site Planning :</span>
             </strong>{" "}
             Prepare plan after the site visit.
           </li>
-          <li>
+          <li className="flex items-start gap-2 group mb-3 cursor-pointer">
+            <i className="fa-solid fa-user-nurse text-2xl text-gray-500 group-hover:text-[#5046e6] transition-colors duration-300"></i>
             <strong>
               <span className="text-[#0094DE]">Best Workers :</span>
             </strong>{" "}
             We have the best experienced workers in our field.
           </li>
-          <li>
+          <li className="flex items-start gap-2 group mb-3 cursor-pointer">
+            <i className="fa-brands fa-creative-commons-nd text-2xl text-gray-500 group-hover:text-[#5046e6] transition-colors duration-300"></i>
             <strong>
               <span className="text-[#0094DE]">Civil Engineers :</span>
             </strong>{" "}
             They work professionally in their field.
           </li>
-          <li>
-            <strong>
-              <span className="text-[#0094DE]">10-Year Warranty :</span>
-            </strong>{" "}
-            We provide a 10-year warranty to our happy customers.
-          </li>
-          <li>
+          <li className="flex items-start gap-2 group mb-3 cursor-pointer">
+            <i className="fa-solid fa-road-circle-check text-2xl text-gray-500 group-hover:text-[#5046e6] transition-colors duration-300"></i>
             <strong>
               <span className="text-[#0094DE]">Free Site Visit :</span>
             </strong>{" "}
             We offer free site visits to our happy customers.
+          </li>
+          <li className="flex items-start gap-2 group mb-3 cursor-pointer">
+            <i className="fa-solid fa-shield text-2xl text-gray-500 group-hover:text-[#5046e6] transition-colors duration-300"></i>
+            <strong>
+              <span className="text-[#0094DE]">10-Year Warranty :</span>
+            </strong>{" "}
+            We provide a 10-year warranty to our happy customers.
           </li>
         </ul>
       </BoxReveal>

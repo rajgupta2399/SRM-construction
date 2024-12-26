@@ -5,10 +5,10 @@ import RetroGrid from "@/components/ui/retro-grid";
 
 export function RetroGridDemo() {
   const stats = [
-    { value: 1545, label: "CLIENTS" },
-    { value: 1275, label: "PROJECTS" },
-    { value: 978, label: "REPAIRING" },
-    { value: 50, label: "AWARDS" },
+    { value: 2500, label: "CLIENTS" },
+    { value: 3000, label: "PROJECTS" },
+    { value: 84, label: "EXPERT TEAM" },
+    { value: 10, label: "AWARDS" },
   ];
 
   return (
