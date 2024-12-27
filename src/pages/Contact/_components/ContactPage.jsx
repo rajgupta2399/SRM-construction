@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import { Field, Label, Switch } from "@headlessui/react";
-
 export default function ContactPage() {
   const [agreed, setAgreed] = useState(false);
 
@@ -24,6 +23,7 @@ export default function ContactPage() {
         </div>
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl">
+            
             Contact Us
           </h2>
           <p className="mt-2 text-lg/8">Let's build something great</p>
