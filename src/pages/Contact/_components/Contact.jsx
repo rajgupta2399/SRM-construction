@@ -66,7 +66,7 @@ export default function ContactPage() {
         }}
       >
         {/* Form fields (name, email, phone, service, message) */}
-        {["name", "email", "phone", "service", "message"].map((field) => (
+        {["Name", "Email", "Phone", "Service", "Message"].map((field) => (
           <div className="mb-6" key={field}>
             <label className="block text-sm font-semibold">{field}</label>
             {field !== "message" ? (
