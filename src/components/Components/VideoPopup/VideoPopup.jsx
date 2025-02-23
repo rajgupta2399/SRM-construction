@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef  } from "react";
 import { useTheme } from "next-themes"; // Hook to detect theme
 
 const VideoPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme } = useTheme(); // Detects current theme
+
+  const videoRef = useRef(null);
 
   // Show the popup automatically when the page loads
   useEffect(() => {
@@ -14,6 +16,17 @@ const VideoPopup = () => {
     }, 1000);
   }, []);
 
+  // Ensure video starts playing when the popup opens
+  useEffect(() => {
+    if (isOpen && videoRef.current) {
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          console.error("Autoplay with sound blocked:", error);
+        });
+      }
+    }
+  }, [isOpen]);
   return (
     <>
       {isOpen && (
@@ -36,8 +49,9 @@ const VideoPopup = () => {
             <video
               className="w-full rounded-xl max-h-[80vh] sm:max-h-[60vh]"
               controls
-              autoPlay
               muted
+              ref={videoRef}
+              autoPlay
               playsInline
             >
               <source src="/SRM.mp4" type="video/mp4" />
