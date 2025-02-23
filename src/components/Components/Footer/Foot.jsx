@@ -59,7 +59,7 @@ export default function FooterApp() {
               SRM Construction is one of the best waterproofing in Delhi NCR. we
               deal in all kinds of waterproofing Like Chemical waterproofing,
               Guniting, Kota, etc. We are one of the best waterproofing
-              contractors in the market with 25 years
+              contractors in the market with 30 years
             </p>
           </div>
           <div>

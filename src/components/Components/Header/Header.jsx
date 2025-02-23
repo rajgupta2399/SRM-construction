@@ -40,7 +40,12 @@ const Header = () => {
         theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
       } transition-all duration-300`}
     >
-      <Logo />
+      <div className="flex items-center -space-x-20">
+        <Logo />
+        <span className="hidden sm:block text-lg font-semibold">
+          SRM Construction
+        </span>
+      </div>
 
       <button
         className="inline-block sm:hidden z-50 mr-4"
